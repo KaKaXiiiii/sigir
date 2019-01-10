@@ -42,7 +42,7 @@ tf.flags.DEFINE_string("training_files", "../../data/%s-train.txt" % train, "tra
 tf.flags.DEFINE_string("training_labeled_files", "../../data/%s-train.txt.labeled" % train, "labeled training file (default: None)")
 tf.flags.DEFINE_string("dev_files", "../../data/%sQA-test.txt" % dev, "dev file (default: None)")
 tf.flags.DEFINE_string("dev_labeled_files", "../../data/%sQA-test.txt.labeled" % dev, "labeled dev file (default: None)")
-tf.flags.DEFINE_string("embedding_file", "../../data/glove.6B.300d.txt", "embedding file (default: None)")
+tf.flags.DEFINE_string("embedding_file", "../../data/glove.42B.300d.txt", "embedding file (default: None)")
 tf.flags.DEFINE_string("entity_embedding_file", "../../embed/fb5m-%s.%s" % (dev,entity_embed), "entity embedding file (default: None)")
 tf.flags.DEFINE_integer("entity_embedding_dim", 64, "Dimensionality of entity embedding (default: 300)")
 tf.flags.DEFINE_integer("hidden_units", 200, "Number of hidden units in softmax regression layer (default:50)")

@@ -27,8 +27,8 @@ class InputHelper(object):
             l=line.strip().split("\t")
             if len(l)<3:
                 continue
-            x1.append(l[0].lower())
-            x2.append(l[1].lower())
+            x1.append(l[0].lower().replace(" ", "").replace("?", ""))
+            x2.append(l[0].lower().replace(" ", "").replace("?", ""))
             y.append(int(l[2]))#np.array([0,1]))
         return np.asarray(x1),np.asarray(x2),np.asarray(y)
 
